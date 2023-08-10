@@ -1,0 +1,56 @@
+.guitarras-acusticas{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.guitarra-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guitarra-img{
+  width: 100%;
+  height: 200px!important;
+  object-fit: contain;
+}
+
+.lanzamientos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.lanzamiento-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.lanzamiento-img{
+  width: 100%;
+  height: 200px!important;
+  object-fit: contain;
+}
+
+.lanzamiento-card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 767.9px) {
+  .lanzamientos{
+    overflow-x: auto;
+  }
+  .lanzamientos::-webkit-scrollbar{
+    display: none;
+  }
+}
